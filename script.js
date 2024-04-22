@@ -14,14 +14,14 @@ dado2.append(numeroCasuale2);
 console.log(typeof dado1)
 console.log(typeof dado2)
 
-const user = parseInt(dado1);
-const cpu = parseInt(dado2);
+const user = parseInt(numeroCasuale);
+const cpu = parseInt(numeroCasuale2);
 
 if (user > cpu) {
     document.getElementById("esito").innerHTML = ("Hai vinto!");
 }
 else {
-    document.getElementById("esito").innerHTML = ("Hai gogo!");
+    document.getElementById("esito").innerHTML = ("Hai perso!");
 }
 
 
