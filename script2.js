@@ -5,7 +5,7 @@ console.log(utentiRegistrati);
 console.log(utentiRegistrati.length, typeof utentiRegistrati.length);
 
 
-for (let c = 0; c <= utentiRegistrati.lenght; c = c + 1) {
+for (let c=0; c <= utentiRegistrati.length; c = c + 1) {
     if (email == utentiRegistrati[c]) {
         console.log("Sei registrato");
         document.getElementById("email").innerHTML = ("ciao");
