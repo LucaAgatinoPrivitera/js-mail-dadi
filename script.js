@@ -1,15 +1,28 @@
-let dado1 = document.getElementById("dado-1");
-let dado2 = document.getElementById("dado-2");
+const dado1 = document.getElementById("dado-1");
+const dado2 = document.getElementById("dado-2");
+
+const numeroCasuale = Math.floor(Math.random() * 6);
+const numeroCasuale2 = Math.floor(Math.random() * 6);
 
 
-let numeroCasuale = Math.floor( Math.random()*6 );
 console.log(numeroCasuale)
+console.log(numeroCasuale2)
 
 dado1.append(numeroCasuale);
-document.getElementById("dado-1").innerHTML = numeroCasuale;
-dado1.innerHTML = numeroCasuale;
-console.log(dado1)
+dado2.append(numeroCasuale2);
 
-if (dado-1 > dado-2){
+console.log(typeof dado1)
+console.log(typeof dado2)
 
+const user = parseInt(dado1);
+const cpu = parseInt(dado2);
+
+if (user > cpu) {
+    document.getElementById("esito").innerHTML = ("Hai vinto!");
 }
+else {
+    document.getElementById("esito").innerHTML = ("Hai gogo!");
+}
+
+
+// Non funziona innerhtml con getElement con class
