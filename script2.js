@@ -9,7 +9,7 @@ let check;
 for (let c = 0; c <= utentiRegistrati.length; c++) {
     if (email == utentiRegistrati[c]) {
         // console.log("Sei registrato");
-        check = "Sei registrato";
+        check = true;
         // document.getElementById("email").innerHTML = ("Sei iscritto");
         // utentiRegistrati.push(email); Funziona in parte, scrive infinite volte "funziona"
     }
@@ -19,7 +19,7 @@ for (let c = 0; c <= utentiRegistrati.length; c++) {
     }
 }
 
-if (check == "Sei registrato") {
+if (check == true) {
     document.getElementById("email").innerHTML = ("Sei iscritto");
     console.log("Sei registrato");
 }
